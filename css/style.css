@@ -10,7 +10,7 @@ body{
 }
 
 h1{
-  background-color: rgba(61,64,91,.9);
+  background-color: #ffb5a7;
   text-align: center;
   color:white;
   font-size: 22px;
@@ -23,14 +23,14 @@ h1{
 
 
 h2,h3{
+
   text-align: center;
-  color:rgb(61,64,91);
+  color:#774936;
   font-size: 17px;
   width: 100%;
   text-align: center;
   padding-top:10px;
-  padding-bottom:10px;
-  margin-bottom:15px;
+  margin-bottom:10px;
 }
 
 h2#risultato{
@@ -45,6 +45,8 @@ p{
 }
 
 .container{
+  margin-bottom: 10px;
+  background-color: #fec89a;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -56,7 +58,7 @@ p{
 button{
   font-weight: bold;
   font-size: 16px;
-  background-color: rgb(61,64,91);
+  background-color: #e07a5f;
   padding:8px 8px;
   border-radius: 5px;
   color:white;
@@ -65,7 +67,7 @@ button{
 
 button:hover{
   font-size: 16px;
-  background-color: #2a9d8f;
+  background-color: #f2cc8f;
   padding:8px 9px;;
   border-radius: 5px;
   color:white;
@@ -75,4 +77,29 @@ img{
   width:60px;
   height:auto;
   margin: 5px;
+}
+
+.container:first-of-type input,.container:first-of-type select{
+  text-align: center;
+  width:140px;
+  height:40px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.container:last-of-type input,.container:last-of-type select{
+  text-align: center;
+  width:70px;
+  height:40px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+span{
+  font-size: 12px;
+  background-color: white;
+  text-align: center;
+  padding:11px 30px;
+  margin: 5px;
+  border-radius: 5px;
 }

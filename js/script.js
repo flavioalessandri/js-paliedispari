@@ -44,17 +44,18 @@ console.log(parseInt(numUser));
 console.log(numCpu);
 
 if(numUser <6 && numUser >0){
-  if(bet == "Pari" && sumIsEven(numUser,numCpu) == true){
+  if(bet == "PARI" && sumIsEven(numUser,numCpu) == false){
     document.getElementById("evenOdd").innerHTML="HAI VINTO! La somma è: " + bet;
     console.log(sumIsEven(numUser,numCpu));
 
-  }else if (bet == "Dispari" && sumIsEven(numUser,numCpu) == false){
+  }else if (bet == "DISPARI" && sumIsEven(numUser,numCpu) == true){
       document.getElementById("evenOdd").innerHTML="HAI VINTO! La somma è: " + bet;
       console.log(sumIsEven(numUser,numCpu));
     }else{
       document.getElementById("evenOdd").innerHTML="Purtroppo hai perso!";
       console.log(sumIsEven(numUser,numCpu));
   }
+    document.getElementById("numCpu").innerHTML= "Num Cpu:" + numCpu;
 
 } else{
   alert("Il numero digitato non è corretto");
