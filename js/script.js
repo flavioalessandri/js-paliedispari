@@ -44,11 +44,11 @@ console.log(parseInt(numUser));
 console.log(numCpu);
 
 if(numUser <6 && numUser >0){
-  if(bet == "PARI" && sumIsEven(numUser,numCpu) == false){
+  if(bet === "PARI" && (sumIsEven(numUser,numCpu)) == true){
     document.getElementById("evenOdd").innerHTML="HAI VINTO! La somma è: " + bet;
     console.log(sumIsEven(numUser,numCpu));
 
-  }else if (bet == "DISPARI" && sumIsEven(numUser,numCpu) == true){
+  }else if (bet === "DISPARI" && (sumIsEven(numUser,numCpu)) == false){
       document.getElementById("evenOdd").innerHTML="HAI VINTO! La somma è: " + bet;
       console.log(sumIsEven(numUser,numCpu));
     }else{
@@ -81,7 +81,7 @@ function stringIsReverseString(array){
 
 function sumIsEven(num1,num2){
   var somma = num1+num2;
-  if (somma%2 == 0){
+  if (somma%2==0){
   return true;
 } else{
   return false;}
